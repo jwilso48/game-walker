@@ -1,0 +1,3 @@
+rootProject.name = 'GameWalker'
+
+include ':app'
