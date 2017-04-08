@@ -9,8 +9,10 @@
     "test": "jest"
   },
   "dependencies": {
+    "module-resolver": "^1.0.0",
     "react": "16.0.0-alpha.6",
     "react-native": "0.43.2",
+    "react-native-maps": "0.13.1",
     "react-native-sound": "^0.9.1"
   },
   "devDependencies": {
