@@ -9,8 +9,10 @@
     "test": "jest"
   },
   "dependencies": {
+    "font-awesome": "^4.7.0",
     "react": "16.0.0-alpha.6",
     "react-native": "0.43.2",
+    "react-native-cli": "^2.0.1",
     "react-native-sound": "^0.9.1"
   },
   "devDependencies": {

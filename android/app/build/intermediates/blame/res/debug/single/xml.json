@@ -2,5 +2,9 @@
     {
         "merged": "/home/jay/Documents/projects/game-walker/GameWalker/android/app/build/intermediates/res/merged/debug/xml/preferences.xml",
         "source": "/home/jay/Documents/projects/game-walker/GameWalker/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.2/res/xml/preferences.xml"
+    },
+    {
+        "merged": "/home/jay/Documents/projects/game-walker/android/app/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/home/jay/Documents/projects/game-walker/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.2/res/xml/preferences.xml"
     }
 ]
