@@ -10,7 +10,8 @@ import {
   StyleSheet,
   Text,
   View,
-  Image
+  Image,
+  TouchableNativeFeedback
 } from 'react-native';
 
 export default class GameWalker extends Component {
