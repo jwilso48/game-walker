@@ -11,6 +11,7 @@ import {
   Text,
   View,
   Image,
+  ToastAndroid,
   TouchableNativeFeedback,
 } from 'react-native';
 import MapView from 'react-native-maps';
@@ -48,8 +49,9 @@ export default class GameWalker extends Component {
 
   state = {
     screen: "main",
-    latitude: null,
-    longitude: null,
+    latitude: 0,
+    longitude: 0,
+    pins: [],
   };
 
   constructor(props) {
@@ -82,13 +84,25 @@ export default class GameWalker extends Component {
         <View style ={map_styles.container}>
           <MapView
           style={map_styles.map}
-          region={{
+          initialRegion={{
             latitude: this.state ? this.state.latitude : 0,
             longitude: this.state ? this.state.longitude : 0,
             latitudeDelta: 0.015,
             longitudeDelta: 0.0121,
           }}
+          onPress={x => {
+            let pins = this.state.pins
+            pins.push({latlng: x.nativeEvent.coordinate, title: this.state.pins.length.toString(), description: "test"})
+            this.setState({pins: pins})
+          }}
           >
+            {this.state.pins.map(x => (
+              <MapView.Marker
+              coordinate={x.latlng}
+              title={x.title}
+              description={x.description}
+              />
+            ))}
           </MapView>
         </View>)
     } else if (this.state.screen === "settings") {
