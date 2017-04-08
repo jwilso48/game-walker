@@ -71,7 +71,7 @@ export default class MyMap extends Component {
     }}
     onPress={x => {
       let pins = this.state.pins
-      pins.push({latlng: x.nativeEvent.coordinate, title: this.state.pins.length.toString(), description: "test", identifier: uuid()})
+      pins.push({latlng: x.nativeEvent.coordinate, title: this.state.pins.length.toString(), description: "test", identifier: uuid(), radius: 10})
       this.setState({pins: pins})
     }}
     >
@@ -85,6 +85,12 @@ export default class MyMap extends Component {
       onCalloutPress={() => {
         this.setState({editing: x, modalVisible: true})
       }}/>
+      ))}
+      {this.state.pins.map(x => (
+        <MapView.Circle
+        center={x.latlng}
+        radius={x.radius}
+        key={x.identifier}/>
       ))}
       </MapView>
       <Modal
@@ -109,9 +115,9 @@ export default class MyMap extends Component {
         this.state.temp_description = x
       }}/>
       <Text>Radius</Text>
-      <TextInput defaultValue={this.state.editing ? this.state.editing.radius : ""}
+      <TextInput defaultValue={this.state.editing ? this.state.editing.radius.toString() : ""}
       onChangeText={x => {
-        this.state.temp_radius = x
+        this.state.temp_radius = Number(x)
       }}/>
       <TouchableHighlight
       onPress={() => {
@@ -125,6 +131,14 @@ export default class MyMap extends Component {
       }
       }>
       <Text>Done</Text>
+      </TouchableHighlight>
+      <TouchableHighlight
+      onPress={() => {
+        this.setState({pins: this.state.pins.filter(x => x.identifier != this.state.editing.identifier)});
+        this.setModalVisible(!this.state.modalVisible);
+        ToastAndroid.show("Location deleted", ToastAndroid.SHORT);
+      }}>
+      <Text>Delete</Text>
       </TouchableHighlight>
       </View>
       </View>

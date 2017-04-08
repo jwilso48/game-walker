@@ -28,12 +28,13 @@ const styles = StyleSheet.create({
 
 import MyHome from './routes/home';
 import MyMap from './routes/map';
+import MySettings from './routes/settings'
 
 export default class GameWalker extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {screen: 'map'};
+    this.state = {screen: 'settings'};
   }
 
   render() {
@@ -47,9 +48,10 @@ export default class GameWalker extends Component {
         this.setState({screen: "home"})
       }}/>
     } else if (this.state.screen === "settings") {
-      body = <Text>Not yet implemented</Text>
-    }
-    else {
+      body = <MySettings to_home_screen={() => {
+        this.setState({screen: "home"})
+      }}/>
+    } else {
       body = <Text>Uh oh, state is invalid</Text>
     }
     return body;
