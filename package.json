@@ -5,7 +5,7 @@
   "scripts": {
     "build": "(cd android/ && ./gradlew assembleDebug)",
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "bundle-android": "react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output android/app/src/main/assets/index.android.bundle --sourcemap-output android/app/src/main/assets/index.android.map --assets-dest android/app/src/main/res/",
+    "bundle-android": "react-native bundle --platform android --dev false --entry-file main.js --bundle-output android/app/src/main/assets/main.bundle --sourcemap-output android/app/src/main/assets/main.map --assets-dest android/app/src/main/res/",
     "test": "jest"
   },
   "dependencies": {
@@ -24,7 +24,7 @@
   "jest": {
     "preset": "react-native"
   },
-  "main": "index.android.js",
+  "main": "main.js",
   "keywords": [],
   "author": "",
   "license": "ISC",

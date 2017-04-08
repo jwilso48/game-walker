@@ -1,15 +1,10 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
 import {
   AppRegistry,
   StyleSheet,
   Text,
   View,
+  Navigator,
 } from 'react-native';
 
 const styles = StyleSheet.create({
@@ -31,19 +26,16 @@ const styles = StyleSheet.create({
   },
 });
 
-export default class GameWalker extends Component {
+import MyHome from './routes/home';
+import MyMap from './routes/map';
 
-  state = {
-    screen: "home",
-  };
+export default class GameWalker extends Component {
 
   constructor(props) {
     super(props);
-    navigator.geolocation.getCurrentPosition(x => {
-      this.setState({latitude: x.coords.latitude});
-      this.setState({longitude: x.coords.longitude});
-    })
+    this.state = {screen: 'map'};
   }
+
   render() {
     let body;
     if (this.state.screen === "home") {
@@ -60,9 +52,7 @@ export default class GameWalker extends Component {
     else {
       body = <Text>Uh oh, state is invalid</Text>
     }
-    return (
-      {body}
-    )
+    return body;
   }
 }
 

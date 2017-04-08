@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export class MyHome extends Component {
+export default class MyHome extends Component {
 
   state = {}
 
@@ -47,7 +47,7 @@ export class MyHome extends Component {
             <View style={{width: 150, height: 150, backgroundColor: 'green', borderRadius: 100}}> 
               <Image
               style={{width: 150, height: 150, borderRadius: 100}}
-              source={require('./img/play-button.png')}
+              source={require('../../img/play-button.png')}
               />
             </View>
           </TouchableNativeFeedback>
