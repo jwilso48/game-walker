@@ -36,6 +36,12 @@ node_modules/
 npm-debug.log
 yarn-error.log
 
+# React Native
+#
+android/build/
+android/.gradle/
+android/app/build/
+
 # BUCK
 buck-out/
 \.buckd/
