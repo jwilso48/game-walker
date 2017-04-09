@@ -1,4 +1,4 @@
-#Sun Apr 09 03:14:15 EDT 2017
-base.0=/home/jay/Documents/projects/game-walker/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+#Sun Apr 09 10:31:25 EDT 2017
+base.0=/mnt/sdcard/src/game-walker/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.0=classes.dex
-file.0=/home/jay/Documents/projects/game-walker/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
+file.0=/mnt/sdcard/src/game-walker/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

@@ -12,10 +12,6 @@ import {
 } from 'react-native';
 import MapView from 'react-native-maps';
 
-const Sound = require('react-native-sound');
-var curSong = ''; //This is where the current/next song is put.
-//Note, song playing won't update until change is called
-
 const styles = StyleSheet.create({
   container: {
     ...StyleSheet.absoluteFillObject,
@@ -43,7 +39,9 @@ function uuid() {
 
 export default class MyMap extends Component {
 
-  state = {
+  constructor(props) {
+    super(props);
+    this.state = {
       modalVisible: false,
       editing: null,
       latitude: 0,
@@ -53,90 +51,13 @@ export default class MyMap extends Component {
       temp_radius: "",
       pins: []
   }
-  constructor(props) {
-    super(props);
-    
     this.setState({to_home_screen: props.to_home_screen});
-    this.state.loopingSound = undefined;
-    Sound.setCategory('Ambient', true);
     navigator
       .geolocation
       .getCurrentPosition(x => {
         this.setState({latitude: x.coords.latitude});
         this.setState({longitude: x.coords.longitude});
       });
-
-    this.playSoundLooped = () => {
-      if (this.state.loopingSound) {
-        return;
-      }
-      const s = new Sound(curSong, Sound.MAIN_BUNDLE, (e) => {
-        if (e) {
-          console.log('error', e);
-        }
-        s.setNumberOfLoops(-1);
-        s.play();
-      });
-      this.setState({loopingSound: s});
-    };
-
-    this.stopSoundLooped = () => {
-      if (!this.state.loopingSound) {
-        return;
-      }
-      this
-        .state
-        .loopingSound
-        .stop()
-        .release();
-      this.setState({loopingSound: null});
-    };
-
-    this.changed = () => {
-      if (!this.state.loopingSound) {
-        return;
-      }
-      this
-        .state
-        .loopingSound
-        .stop()
-        .release();
-      this.setState({loopingSound: null});
-
-      const s = new Sound(curSong, Sound.MAIN_BUNDLE, (e) => {
-        if (e) {
-          console.log('error', e);
-        }
-        s.setNumberOfLoops(-1);
-        s.play();
-      });
-      this.setState({loopingSound: s});
-    };
-
-    this.updater = () => {
-      // TODO:find location, associate pins with songs in settings ideally, pins would
-      // be something like a tree for efficiency, but instead for each of pins p,
-      // along with matching song
-      let locSong = 'music/wind-waker/1-31 Ocean.mp3';
-      // Todo: no song to loc info yet currently, will apply one song to all pins, and
-      // overworld song otherwise
-      for (p in this.state.pins) {
-        if ((Math.pow((x.coords.latitude - p.latitude), 2) + Math.pow((x.coords.longitude - p.longitude), 2)) < 10) {
-          locSong = 'music/wind-waker/1-01 Title.mp3';
-          break; //no need to search more
-        }
-      }
-
-      //if not playing, start
-      if (curSong == '') {
-        curSong = locSong;
-        this.playSoundLooped;
-        //if different location song, change
-      } else if (curSong != locSong) {
-        curSong = locSong;
-        this.changed;
-      }
-    }
 
   }
 
@@ -160,10 +81,8 @@ export default class MyMap extends Component {
             longitudeDelta: 0.0121
           }}
           onPress={x => {
-          let pins = this
-            .state
-            .pins pins
-            .push({
+          let pins = this.state.pins;
+          pins.push({
               latlng: x.nativeEvent.coordinate,
               title: this
                 .state
@@ -173,13 +92,10 @@ export default class MyMap extends Component {
               description: "test",
               identifier: uuid(),
               radius: 10
-            })this
-            .setState({pins: pins})
+            });
+            this.setState({pins: pins})
         }}>
-          {this
-            .state
-            .pins
-            .map(x => (<MapView.Marker
+          {this.state.pins.map(x => (<MapView.Marker
               coordinate={x.latlng}
               title={x.title}
               description={x.description}
@@ -256,10 +172,7 @@ export default class MyMap extends Component {
               <TouchableHighlight
                 onPress={() => {
                 this.setState({
-                  pins: this
-                    .state
-                    .pins
-                    .filter(x => x.identifier != this.state.editing.identifier)
+                  pins: this.state.pins.filter(x => x.identifier != this.state.editing.identifier)
                 });
                 this.setModalVisible(!this.state.modalVisible);
                 ToastAndroid.show("Location deleted", ToastAndroid.SHORT);

@@ -3,210 +3,273 @@
 
     <item
         is-multidex="false"
-        jar="/home/jay/Documents/projects/game-walker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="050f688115ea65a0292d8483a6ffe6bcdab1e2ef">
-        <dex dex="/home/jay/Documents/projects/game-walker/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.0.1_1d8a7e79ccb560a4f110807a107354a7ab7c75db.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jay/Documents/projects/game-walker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="2668e49e4e31c7d451b76a36009b902bf44e0d70">
-        <dex dex="/home/jay/Documents/projects/game-walker/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.0.1_5f7480ea5d974fba74851518f555270ebddfbc97.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jay/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="/home/jay/Documents/projects/game-walker/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_77468f59ac30cb3b6380b798bedb9ac068bb0366.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jay/Documents/projects/game-walker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="5a61f17cd72e20aa4323cbf5f909b7c609619275">
-        <dex dex="/home/jay/Documents/projects/game-walker/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.0.1_8627ca3f7edd119ff70411f657c943489ec3d87f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jay/Documents/projects/game-walker/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="/home/jay/Documents/projects/game-walker/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_64766d2802bed4b352ac4a18b14e021632e45d7b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jay/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
-        <dex dex="/home/jay/Documents/projects/game-walker/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_fa738cf2376129066d582fc27c8a26d985e5108e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jay/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
-        <dex dex="/home/jay/Documents/projects/game-walker/android/app/build/intermediates/pre-dexed/debug/okio-1.9.0_0638e2f8bd7ff752e4c2124f78d4711ba2e0efb5.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jay/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-ws/3.4.1/8ace66ef7002d98f633377c9e67daeeb196d8c3b/okhttp-ws-3.4.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="8ace66ef7002d98f633377c9e67daeeb196d8c3b">
-        <dex dex="/home/jay/Documents/projects/game-walker/android/app/build/intermediates/pre-dexed/debug/okhttp-ws-3.4.1_a94b406e509798a3038c85f611be037f0ca0a812.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jay/Documents/projects/game-walker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d9c4402c3057225d80cbbbec52154e7a25b0ebdf">
-        <dex dex="/home/jay/Documents/projects/game-walker/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.0.1_a1cb6afddaf11d46e53645cfe4e4eb84cd710490.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jay/Documents/projects/game-walker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="cf836a435a496eb22ff2aa69aa1e619462549f81">
-        <dex dex="/home/jay/Documents/projects/game-walker/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.0.1_9ca92ed4003ee1fe30b49e0c1c967cc9b3595844.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jay/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
-        <dex dex="/home/jay/Documents/projects/game-walker/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_8f920d87457cc482d468259cfb23b3d165ffc5ea.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jay/Documents/projects/game-walker/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
-        <dex dex="/home/jay/Documents/projects/game-walker/android/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.4.0_7036702499ad999c93ffa88e1d77400a75a02678.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jay/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
-        <dex dex="/home/jay/Documents/projects/game-walker/android/app/build/intermediates/pre-dexed/debug/okhttp-3.4.1_76d927862e4c85ac353142b97922078f6d9c73b7.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jay/Documents/projects/game-walker/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.2/jars/libs/infer-annotations-1.5.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="dcac634e137395f79693ec760f081a86eb2bd84e">
-        <dex dex="/home/jay/Documents/projects/game-walker/android/app/build/intermediates/pre-dexed/debug/infer-annotations-1.5_3cf107be6e3160f9a6583f4d591fa45eabc0e75a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jay/Documents/projects/game-walker/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
-        <dex dex="/home/jay/Documents/projects/game-walker/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_6c88af8412ab621d86828d5ef970fae1b0c8acf1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jay/Documents/projects/game-walker/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="/home/jay/Documents/projects/game-walker/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_5956ca32a2ad321a5f7ebe932f9a40de8f1c1b3b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/usr/lib/android-sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
-        <dex dex="/home/jay/Documents/projects/game-walker/android/app/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_cc52a825abb1611b61af133c6bef16ed16de183e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jay/Documents/projects/game-walker/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="/home/jay/Documents/projects/game-walker/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_4cdde154690f3858773a003bb859331f48d0c507.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jay/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="6975da39a7040257bd51d21a231b76c915872d38">
-        <dex dex="/home/jay/Documents/projects/game-walker/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_cc90f5b78a73083d36a46d8e71f13a509ca52902.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jay/Documents/projects/game-walker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
-        <dex dex="/home/jay/Documents/projects/game-walker/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.0.1_5f006d2c05b69d3d321447e4d95437adef202b4e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jay/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.4.1/63994437f62bc861bc20c605d12962f7246116d1/okhttp-urlconnection-3.4.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="63994437f62bc861bc20c605d12962f7246116d1">
-        <dex dex="/home/jay/Documents/projects/game-walker/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.4.1_82950892a824f9097471bc81888f1163cc60a321.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jay/Documents/projects/game-walker/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.2/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="dd7e9e4044d541b253c526294b9f4985029d846c">
-        <dex dex="/home/jay/Documents/projects/game-walker/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.43.2_0fe9b2dd5db322b47a244b9f4e47c969c6f84205.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jay/Documents/projects/game-walker/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jar="/mnt/sdcard/src/game-walker/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="8f615bca00639150c9eb6175d4b5471193f70794">
-        <dex dex="/home/jay/Documents/projects/game-walker/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_023d169901b7359a2d648ac861fd3cce20fb5c31.jar" />
+        <dex dex="/mnt/sdcard/src/game-walker/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_a1e4f3a06c2e267269aa09bffa43f09796b1f5cc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/idle_zealot/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/mnt/sdcard/src/game-walker/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_bccf6302d1caa5762eec17fd12fad2f71b3cdf2a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/mnt/sdcard/src/game-walker/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/mnt/sdcard/src/game-walker/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_be3a9e640ad0da3901f702f922d7ec286b7ba45e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/mnt/sdcard/src/game-walker/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
+        <dex dex="/mnt/sdcard/src/game-walker/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-10.0.1_0056066ee6a40f8a041d210fc8b87907435d359f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/mnt/sdcard/src/game-walker/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="/mnt/sdcard/src/game-walker/android/app/build/intermediates/pre-dexed/debug/internal_impl-24.0.0_7a933cbcb11a917e042f0fd05b8c1f5b5eb1ec86.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/idle_zealot/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-ws/3.4.1/8ace66ef7002d98f633377c9e67daeeb196d8c3b/okhttp-ws-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8ace66ef7002d98f633377c9e67daeeb196d8c3b">
+        <dex dex="/mnt/sdcard/src/game-walker/android/app/build/intermediates/pre-dexed/debug/okhttp-ws-3.4.1_eab784800d604ea537c9a06289278e872374bc35.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/idle_zealot/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/mnt/sdcard/src/game-walker/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_9f270988df1ec92e851802cacfb0561f35de60f9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/mnt/sdcard/src/game-walker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="cf836a435a496eb22ff2aa69aa1e619462549f81">
+        <dex dex="/mnt/sdcard/src/game-walker/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.0.1_7818478e54e645890323ba8cf1718d52927a1818.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/idle_zealot/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/mnt/sdcard/src/game-walker/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_6f073ee377209908045e20ab6a51fbae90dac80a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/mnt/sdcard/src/game-walker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2668e49e4e31c7d451b76a36009b902bf44e0d70">
+        <dex dex="/mnt/sdcard/src/game-walker/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.0.1_02fe00181bc3e57b8eed79ecfa519d5e995d0301.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/mnt/sdcard/src/game-walker/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/mnt/sdcard/src/game-walker/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_3ed7bb153bb46bcc100e8e6ec718d0844d23e15a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/mnt/sdcard/src/game-walker/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="27777b3cad3c20b1acab19f6e37fe3e03371bf6e">
+        <dex dex="/mnt/sdcard/src/game-walker/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-maps-10.0.1_faefb88be4d3e31cde2dc20adb71238603cf1d7b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/mnt/sdcard/src/game-walker/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
+        <dex dex="/mnt/sdcard/src/game-walker/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-10.0.1_0af045475b1771688a96bf228f12797c6d1f3531.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/mnt/sdcard/src/game-walker/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="/mnt/sdcard/src/game-walker/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.0.0_eb193d11942aefbc3674fef2d0e748ad8ea5cd77.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/idle_zealot/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="/mnt/sdcard/src/game-walker/android/app/build/intermediates/pre-dexed/debug/okhttp-3.4.1_54296af6438cbb3a40e8e4031bf09529e96bde3b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/mnt/sdcard/src/game-walker/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="/mnt/sdcard/src/game-walker/android/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.4.0_4e4d9c436cf0df6e2831a5d4a7bc73a2e33286ee.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/idle_zealot/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.4.1/63994437f62bc861bc20c605d12962f7246116d1/okhttp-urlconnection-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="63994437f62bc861bc20c605d12962f7246116d1">
+        <dex dex="/mnt/sdcard/src/game-walker/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.4.1_8d0d113ad33e2b9b8909de3b8d9dafaf1e457ed3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/mnt/sdcard/src/game-walker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
+        <dex dex="/mnt/sdcard/src/game-walker/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.0.1_b18cef97cfbd58b5737eab08f4d25bddc49bbc2f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/mnt/sdcard/src/game-walker/android/app/build/intermediates/exploded-aar/GameWalker/react-native-sound/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e5e5cb854b11872509b6f1840774beee88394bad">
+        <dex dex="/mnt/sdcard/src/game-walker/android/app/build/intermediates/pre-dexed/debug/GameWalker-react-native-sound-unspecified_366dc3fb1addcc71b8f89bf66e336dbd25417a69.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/mnt/sdcard/src/game-walker/android/app/build/intermediates/exploded-aar/GameWalker/react-native-maps/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="1119781625b0edc339367cfe9ce148c202f5de5a">
+        <dex dex="/mnt/sdcard/src/game-walker/android/app/build/intermediates/pre-dexed/debug/GameWalker-react-native-maps-unspecified_e72236fe5731e0764990d931b90c3ca07d333348.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/idle_zealot/.android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.0.0/support-annotations-24.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="/mnt/sdcard/src/game-walker/android/app/build/intermediates/pre-dexed/debug/support-annotations-24.0.0_15892be1661c0cc676e20f5b2ffa50183f797d57.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/mnt/sdcard/src/game-walker/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.2/jars/libs/infer-annotations-1.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="dcac634e137395f79693ec760f081a86eb2bd84e">
+        <dex dex="/mnt/sdcard/src/game-walker/android/app/build/intermediates/pre-dexed/debug/infer-annotations-1.5_55916f0ed67d730f5018e7ae9395f128cd22df24.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/mnt/sdcard/src/game-walker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5a61f17cd72e20aa4323cbf5f909b7c609619275">
+        <dex dex="/mnt/sdcard/src/game-walker/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.0.1_3f8388b695ee04243fa7d37de148c171564755c6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/mnt/sdcard/src/game-walker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="050f688115ea65a0292d8483a6ffe6bcdab1e2ef">
+        <dex dex="/mnt/sdcard/src/game-walker/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.0.1_5829e5607cebd6ea488801b9b92a07286ca87c20.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/idle_zealot/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
+        <dex dex="/mnt/sdcard/src/game-walker/android/app/build/intermediates/pre-dexed/debug/okio-1.9.0_d268b4cfd78d635ce76ff576f24e967d61df98b5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/mnt/sdcard/src/game-walker/android/app/build/intermediates/exploded-aar/GameWalker/react-native-vector-icons/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2157e81c5cff641a4dcfca4e79b11ecf910d3358">
+        <dex dex="/mnt/sdcard/src/game-walker/android/app/build/intermediates/pre-dexed/debug/GameWalker-react-native-vector-icons-unspecified_02dd463ebcf19512ca1fa0f37810b502df68a7d5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/mnt/sdcard/src/game-walker/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="dd7e9e4044d541b253c526294b9f4985029d846c">
+        <dex dex="/mnt/sdcard/src/game-walker/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.43.2_a8d7e6205521e4a24973438d5c2ad8f69e5da82d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/mnt/sdcard/src/game-walker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d9c4402c3057225d80cbbbec52154e7a25b0ebdf">
+        <dex dex="/mnt/sdcard/src/game-walker/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.0.1_7317a6cb87f549c57b3e0e5fc2e94aaed882cbba.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/idle_zealot/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="/mnt/sdcard/src/game-walker/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_f2104f2a89c654d444d09b2ab1f2677b3b3535ea.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/mnt/sdcard/src/game-walker/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
+        <dex dex="/mnt/sdcard/src/game-walker/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-10.0.1_2568941018c66876abca08dd9cf64e28232b8f34.jar" />
     </item>
 
 </items>

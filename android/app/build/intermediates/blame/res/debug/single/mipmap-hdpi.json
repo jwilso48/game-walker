@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/mnt/sdcard/src/game-walker/android/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
+        "source": "/mnt/sdcard/src/game-walker/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
         "merged": "/home/jay/Documents/projects/game-walker/android/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
         "source": "/home/jay/Documents/projects/game-walker/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
