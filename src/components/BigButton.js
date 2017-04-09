@@ -1,3 +1,7 @@
+/*
+ * Buttons for the home screen.
+ */
+
 import React, { Component } from 'react';
 import {
     StyleSheet,
@@ -23,6 +27,4 @@ const styles = StyleSheet.create({
         },
         textShadowRadius: 1
     }
-})
-
-export default BigButton;
+});

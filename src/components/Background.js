@@ -32,5 +32,3 @@ const styles = StyleSheet.create({
         tintColor: 'F2F2F2'
     }
 });
-
-export default Background;
