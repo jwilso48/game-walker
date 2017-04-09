@@ -18,7 +18,7 @@ export default class Background extends Component {
         return(
             <Image
                 style={styles.backgroundImage}
-                {/* BELOW IS TOTALLY A PLACEHOLDER */}
+                /* BELOW IS TOTALLY A PLACEHOLDER */
                 source={require('../resources/img/beedle.png')}
             />
         );
@@ -28,7 +28,8 @@ export default class Background extends Component {
 const styles = StyleSheet.create({
     backgroundImage: {
         flex: 1,
-        resizeMode: 'cover',
-        tintColor: 'F2F2F2'
+        // resizeMode: 'cover',
+        // tintColor: '#F2F2F2'
+        paddingTop: 60
     }
 });

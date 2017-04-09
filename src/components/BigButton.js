@@ -11,7 +11,9 @@ import {
 export default class BigButton extends Component {
     render() {
         return(
-            <Text style={styles.button}>{this.props.children}</Text>
+            <Text style={styles.button}>
+                {this.props.children}
+            </Text>
         );
     }
 }
@@ -19,7 +21,7 @@ export default class BigButton extends Component {
 const styles = StyleSheet.create({
     button: {
         color: '#B3B3B3',
-        fontFamily: 'font-awesome',
+        // fontFamily: 'fontawesome',
         textShadowColor: '#474747',
         textShadowOffset: {
             width: 2,
