@@ -8,6 +8,8 @@ import {
 } from 'react-native';
 import BigButton from './src/components/BigButton';
 import Background from './src/components/Background';
+import MyMap from './src/routes/MyMap';
+import MySettings from './src/routes/MySettings';
 import { StackNavigator } from 'react-navigation';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
@@ -50,7 +52,7 @@ class SettingsScreen extends Component {
 	};
 	render() {
 		return (
-			<Text>Settings!</Text>
+			<MySettings />
 		);
 	}
 }
@@ -61,7 +63,7 @@ class MapScreen extends Component {
 	};
 	render() {
 		return (
-			<Text>Map!</Text>
+			<MyMap />
 		);
 	}
 }
