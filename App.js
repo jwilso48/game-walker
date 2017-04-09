@@ -6,13 +6,13 @@ import {
 	Text,
 	View
 } from 'react-native';
-import BigButton from './src/components/BigButton';
-import Background from './src/components/Background';
-import MyMap from './src/routes/MyMap';
-import MySettings from './src/routes/MySettings';
-import { StackNavigator } from 'react-navigation';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import Background from './src/components/Background';		// Background that updates as song changes. Optional (unlikely).
+// import MyMap from './src/routes/MyMap';
+// import MySettings from './src/routes/MySettings';
+import { StackNavigator } from 'react-navigation';			// For the navigation windows and actions
+import Icon from 'react-native-vector-icons/FontAwesome';	// For icons
 
+// Layout and actions for the home screen
 class HomeScreen extends Component {
 	static navigationOptions = {
 		title: 'Game Walker',
@@ -21,6 +21,7 @@ class HomeScreen extends Component {
 		const { navigate } = this.props.navigation;
 		return (
 			<View style={styles.container}>
+				{/*background*/}
 					<View style={styles.topBar}>
 						<Icon
 							name='map-o'
@@ -41,39 +42,46 @@ class HomeScreen extends Component {
 						<Text>Location Name</Text>
 						<Text>Song Name</Text>
 					</View>
+				{/*background*/}
 			</View>
 		);
 	}
 }
 
+// Layout and behavior for Settings screen
 class SettingsScreen extends Component {
 	static navigationOptions = {
 		title: 'Settings',
 	};
 	render() {
 		return (
-			<MySettings />
+			// <MySettings />
+			<Text>Settings!</Text>
 		);
 	}
 }
 
+// Layout and settings for Map page
 class MapScreen extends Component {
 	static navigationOptions = {
 		title: 'Map',
 	};
 	render() {
 		return (
-			<MyMap />
+			// <MyMap />
+			<Text>Map!</Text>
 		);
 	}
 }
 
+// Like a directory for the available pages
 const GameWalker = StackNavigator({
 	Home: { screen: HomeScreen },
 	Settings: { screen: SettingsScreen },
 	Map: { screen: MapScreen },
 });
 
+// Stylesheets. For pretties.
 const styles = StyleSheet.create({
 	container: {
  	    flex: 1,
@@ -98,4 +106,5 @@ const styles = StyleSheet.create({
 	}
 });
 
+// Exports app for react-native or whatever
 AppRegistry.registerComponent('GameWalker', () => GameWalker);
