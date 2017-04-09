@@ -43,9 +43,7 @@ function uuid() {
 
 export default class MyMap extends Component {
 
-  constructor(props) {
-    super(props);
-    this.state = {
+  state = {
       modalVisible: false,
       editing: null,
       latitude: 0,
@@ -54,7 +52,10 @@ export default class MyMap extends Component {
       temp_title: "",
       temp_radius: "",
       pins: []
-    }
+  }
+  constructor(props) {
+    super(props);
+    
     this.setState({to_home_screen: props.to_home_screen});
     this.state.loopingSound = undefined;
     Sound.setCategory('Ambient', true);
@@ -149,15 +150,15 @@ export default class MyMap extends Component {
         <MapView
           style={styles.map}
           initialRegion={{
-          latitude: this.state
-            ? this.state.latitude
-            : 0,
-          longitude: this.state
-            ? this.state.longitude
-            : 0,
-          latitudeDelta: 0.015,
-          longitudeDelta: 0.0121
-        }}
+            latitude: this.state
+              ? this.state.latitude
+              : 0,
+            longitude: this.state
+              ? this.state.longitude
+              : 0,
+            latitudeDelta: 0.015,
+            longitudeDelta: 0.0121
+          }}
           onPress={x => {
           let pins = this
             .state

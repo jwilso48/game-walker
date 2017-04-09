@@ -9,6 +9,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "directory-to-json": "^1.3.0",
     "module-resolver": "^1.0.0",
     "react": "16.0.0-alpha.6",
     "react-native": "0.43.2",

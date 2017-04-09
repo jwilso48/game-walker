@@ -8,7 +8,7 @@ import {
 } from 'react-native';
 import Background from './src/components/Background';		// Background that updates as song changes. Optional (unlikely).
 // import MyMap from './src/routes/MyMap';
-// import MySettings from './src/routes/MySettings';
+import MySettings from './src/routes/MySettings';
 import { StackNavigator } from 'react-navigation';			// For the navigation windows and actions
 import Icon from 'react-native-vector-icons/FontAwesome';	// For icons
 
@@ -36,9 +36,9 @@ class HomeScreen extends Component {
 						/>
 					</View>
 					<View style={styles.play}>
-						<Icon name='play-circle' size={150} />
+						<Icon name='play-circle' size={175} />
 					</View>
-					<View alignItems='center'>
+					<View style={styles.bottomBar}>
 						<Text>Location Name</Text>
 						<Text>Song Name</Text>
 					</View>
@@ -55,8 +55,8 @@ class SettingsScreen extends Component {
 	};
 	render() {
 		return (
-			// <MySettings />
-			<Text>Settings!</Text>
+			<MySettings />
+			// <Text>Settings!</Text>
 		);
 	}
 }
@@ -93,16 +93,23 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
+		borderBottomWidth: 125,
+		borderColor: 'transparent'
 	},
 	topBar: {
 		flex: 1,
 		flexDirection: 'row',
 		justifyContent: 'space-between',
+		padding: 10
 	},
 	button: {
 		fontSize: 30,
 		textAlign: 'center',
 		backgroundColor: 'rgba(0,0,0,0)',
+	},
+	bottomBar: {
+		alignItems: 'center',
+		padding: 30
 	}
 });
 
