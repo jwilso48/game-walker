@@ -12,6 +12,14 @@ import {
 } from 'react-native';
 import MapView from 'react-native-maps';
 
+const Sound = require('react-native-sound');
+var curSong = '';	//This is where the current/next song is put.
+					//Note, song playing won't update until change is called
+
+
+	
+
+
 const styles = StyleSheet.create({
   container: {
     ...StyleSheet.absoluteFillObject,
@@ -35,9 +43,6 @@ function uuid() {
     });
 }
 
-const Sound = require('react-native-sound');
-var curSong = '';	//This is where the current/next song is put.
-					//Note, song playing won't update until change is called
 
 export default class MyMap extends Component {
 
@@ -54,14 +59,14 @@ export default class MyMap extends Component {
 
   constructor(props) {
     super(props);
-    this.setState({to_home_screen: props.to_home_screen})
-    navigator.geolocation.getCurrentPosition(x => {
-      this.setState({latitude: x.coords.latitude, longitude: x.coords.longitude});
-    });
-	
+    this.setState({to_home_screen: props.to_home_screen});
 	this.state.loopingSound = undefined;
-	
 	Sound.setCategory('Ambient', true);
+	navigator.geolocation.getCurrentPosition(x => {
+		this.setState({latitude: x.coords.latitude});
+		this.setState({longitude: x.coords.longitude});
+	});
+	
 	
 	this.playSoundLooped = () => {
 		if (this.state.loopingSound) {
@@ -105,16 +110,33 @@ export default class MyMap extends Component {
 		});
 		this.setState({loopingSound:s});
 	};
+	
+		//TODO:find location, associate pins with songs in settings
+		//ideally, pins would be something like a tree for efficiency, but instead
+		//for each of pins p, along with matching song
+		//if ((coords.lat - pins.lat)^2 + (coords.lon - pins.lon)^2) < radius^2
+		//then locSong = pin song
+		let locSong = 'music/wind-waker/1-31 Ocean.mp3';
+		//Todo: no song to loc info yet
+		//currently, will apply one song to all pins, and overworld song otherwise
+		for (p in this.state.pins) {
+			if ((Math.pow((x.coords.latitude - p.latitude),2) + Math.pow((x.coords.longitude - p.longitude),2)) < 10) {
+				locSong = 'music/wind-waker/1-01 Title.mp3';
+				break;	//no need to search more
+			}
+		}
+		
+		//if not playing, start
+		if (curSong == '') {
+			curSong = locSong;
+			this.playSoundLooped;
+			//if different location song, change
+		} else if (curSong != locSong) {
+			curSong = locSong;
+			this.changed;
+		}
   }
   
-  //logic for playing songs.
-  //If not playing, start.
-  //check periodically if near area for a song, and compare to current song
-  //overworld song if no song nearby
-  //if same, do nothing this check.
-  //if different, update song, and run changed.
-  setInterval();
-
   setModalVisible(visible) { this.setState({modalVisible: visible}); }
   
   render() {
@@ -204,5 +226,37 @@ export default class MyMap extends Component {
       </Modal>
       </View>
       );
+	  //logic for playing songs.
+	//If not playing, start.
+	//check periodically if near area for a song, and compare to currentsong
+	//overworld song if no song nearby
+	//if same, do nothing this check.
+	//if different, update song, and run changed.
+
+	//TODO:find location, associate pins with songs in settings
+	//ideally, pins would be something like a tree for efficiency, but instead
+	//for each of pins p, along with matching song
+	//if ((coords.lat - pins.lat)^2 + (coords.lon - pins.lon)^2) < adius^2
+	//then locSong = pin song
+	let locSong = 'music/wind-waker/1-31 Ocean.mp3';
+	//Todo: no song to loc info yet
+		
+	//currently, will apply one song to all pins, and overworld song otherwise
+	for (p in this.state.pins) {
+		if ((Math.pow((coords.latitude - p.latitude),2) + Math.pow((coords.longitude - p.longitude),2)) < 10) {
+			locSong = 'music/wind-waker/1-01 Title.mp3';
+			break;	//no need to search more
+		}
+	}
+		
+	//if not playing, start
+	if (curSong == '') {
+		curSong = locSong;
+		this.playSoundLooped;
+		//if different location song, change
+	} else if (curSong != locSong) {
+		curSong = locSong;
+		this.changed;
+	}
     }
   }
