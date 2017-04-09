@@ -111,11 +111,10 @@ export default class MyMap extends Component {
 		this.setState({loopingSound:s});
 	};
 	
+	this.updater = () => {
 		//TODO:find location, associate pins with songs in settings
 		//ideally, pins would be something like a tree for efficiency, but instead
 		//for each of pins p, along with matching song
-		//if ((coords.lat - pins.lat)^2 + (coords.lon - pins.lon)^2) < radius^2
-		//then locSong = pin song
 		let locSong = 'music/wind-waker/1-31 Ocean.mp3';
 		//Todo: no song to loc info yet
 		//currently, will apply one song to all pins, and overworld song otherwise
@@ -135,6 +134,8 @@ export default class MyMap extends Component {
 			curSong = locSong;
 			this.changed;
 		}
+	}
+	
   }
   
   setModalVisible(visible) { this.setState({modalVisible: visible}); }
@@ -209,6 +210,7 @@ export default class MyMap extends Component {
         this.state.temp_title = "";
         this.setModalVisible(!this.state.modalVisible);
         ToastAndroid.show("Changes saved", ToastAndroid.SHORT);
+		this.updater;
       }
       }>
       <Text>Done</Text>
@@ -226,37 +228,6 @@ export default class MyMap extends Component {
       </Modal>
       </View>
       );
-	  //logic for playing songs.
-	//If not playing, start.
-	//check periodically if near area for a song, and compare to currentsong
-	//overworld song if no song nearby
-	//if same, do nothing this check.
-	//if different, update song, and run changed.
 
-	//TODO:find location, associate pins with songs in settings
-	//ideally, pins would be something like a tree for efficiency, but instead
-	//for each of pins p, along with matching song
-	//if ((coords.lat - pins.lat)^2 + (coords.lon - pins.lon)^2) < adius^2
-	//then locSong = pin song
-	let locSong = 'music/wind-waker/1-31 Ocean.mp3';
-	//Todo: no song to loc info yet
-		
-	//currently, will apply one song to all pins, and overworld song otherwise
-	for (p in this.state.pins) {
-		if ((Math.pow((coords.latitude - p.latitude),2) + Math.pow((coords.longitude - p.longitude),2)) < 10) {
-			locSong = 'music/wind-waker/1-01 Title.mp3';
-			break;	//no need to search more
-		}
-	}
-		
-	//if not playing, start
-	if (curSong == '') {
-		curSong = locSong;
-		this.playSoundLooped;
-		//if different location song, change
-	} else if (curSong != locSong) {
-		curSong = locSong;
-		this.changed;
-	}
     }
   }
