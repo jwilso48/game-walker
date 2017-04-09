@@ -26,13 +26,67 @@ const styles = StyleSheet.create({
   },
 });
 
+const Sound = require('react-native-sound');
+var curSong = '';	//This is where the current/next song is put.
+					//Note, song playing won't update until change is called
+
 export default class MyHome extends Component {
 
   state = {}
 
   constructor(props) {
-    super(props)
-    this.state.to_map_screen = props.to_map_screen
+    super(props);
+    this.state.to_map_screen = props.to_map_screen;
+	this.state.loopingSound = undefined;
+	
+	Sound.setCategory('Ambient', true);
+	
+	this.playSoundLooped = () => {
+		if (this.state.loopingSound) {
+			return;
+		}
+		const s = new Sound(curSong, Sound.MAIN_BUNDLE, (e) => {
+			if (e) {
+				console.log('error', e);
+			}
+			s.setNumberOfLoops(-1);
+			s.play();
+		});
+		this.setState({loopingSound: s});
+	};
+	
+	this.stopSoundLooped = () => {
+		if (!this.state.loopingSound) {
+			return;
+		}
+		this.state.loopingSound
+			.stop()
+			.release();
+		this.setState({loopingSound:null});
+	};
+	
+	this.changed = () => {
+		if (!this.state.loopingSound) {
+			return;
+		}
+		this.state.loopingSound
+			.stop()
+			.release();
+		this.setState({loopingSound:null});
+		
+		const s = new Sound(curSong, Sound.MAIN_BUNDLE, (e) => {
+			if (e) {
+				console.log('error', e);
+			}
+			s.setNumberOfLoops(-1);
+			s.play();
+		});
+		this.setState({loopingSound:s});
+	};
+	
+//	this.state = {
+//		loopingSound: undefined,
+//	};
   }
 
   render() {
